@@ -5,39 +5,72 @@ package screenmatch;
 
 public class Pelicula {
 
-  String nombre;
+  private String nombre;
 
-  int fechaDeLanzamiento;
+  private int fechaDeLanzamiento;
 
-  int duracionEnMinutos;
+  private int duracionEnMinutos;
 
-  boolean incluidoEnElPlan;
+  private boolean incluidoEnElPlan;
 
   private double sumaDeLasEvaluaciones;
 
   private int totalDeLasEvaluaciones;
 
-  int getTotalDeLasEvaluaciones(){
+  public int getTotalDeLasEvaluaciones() {
     return totalDeLasEvaluaciones;
   }
 
-  void muestraFichaTecnica(){
+  public void muestraFichaTecnica() {
     System.out.println("Mi pelicula es: " + nombre);
     System.out.println("Su fecha de lanzamiento es: " + fechaDeLanzamiento);
     System.out.println("Duracion en minutos: " + duracionEnMinutos);
   }
-  
-  void evalua(double nota){
+
+  public void evalua(double nota) {
     sumaDeLasEvaluaciones += nota;
-    totalDeLasEvaluaciones ++;
+    totalDeLasEvaluaciones++;
     // lo mismo pero largo
     // el += hace que sume a ella misma con la variable
     // sumaDeLasEvaluaciones = sumaDeLasEvaluaciones + nota;
-  } 
-
-  double calculaMedia(){
-    return sumaDeLasEvaluaciones / totalDeLasEvaluaciones;
-    
   }
-  
+
+  public double calculaMedia() {
+    return sumaDeLasEvaluaciones / totalDeLasEvaluaciones;
+
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+    // this hace que java reconozca la variable a la que queremos definirla
+  }
+
+  public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
+    this.fechaDeLanzamiento = fechaDeLanzamiento;
+  }
+
+  public void setDuracionEnMinutos(int duracionEnMinutos) {
+    this.duracionEnMinutos = duracionEnMinutos;
+  }
+
+  public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
+    this.incluidoEnElPlan = incluidoEnElPlan;
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public int getFechaDeLanzamiento() {
+    return fechaDeLanzamiento;
+  }
+
+  public int getDuracionEnMinutos() {
+    return duracionEnMinutos;
+  }
+
+  public boolean isIncluidoEnElPlan() {
+    return incluidoEnElPlan;
+  }
+
 }
