@@ -2,6 +2,7 @@
  * Principal
  */
 import screenmatch.Pelicula;
+import screenmatch.Serie;
 
 public class Principal {
 
@@ -19,9 +20,21 @@ public class Principal {
     miPelicula.evalua(10);
     miPelicula.evalua(10);
     miPelicula.evalua(7.8);
+    System.out.println("Media de eVAluaciones de la pelicula: " + miPelicula.calculaMedia());
 
-    System.out.println(miPelicula.getTotalDeLasEvaluaciones());
-    System.out.println(miPelicula.calculaMedia());
+
+    Serie casaDragon = new Serie();
+    casaDragon.setNombre("La casa del dragon");
+    casaDragon.setFechaDeLanzamiento(2022);
+    casaDragon.setTemporadas(1);
+    casaDragon.setMinutosPorEpisodio(50); 
+    casaDragon.setEpisodiosPorTemprada(10);
+    casaDragon.muestraFichaTecnica();
+    System.out.println(casaDragon.getDuracionEnMinutos());
+
+    // comentamos esto para seguir con el curso
+    // System.out.println(miPelicula.getTotalDeLasEvaluaciones());
+    // System.out.println(miPelicula.calculaMedia());
 
     
 

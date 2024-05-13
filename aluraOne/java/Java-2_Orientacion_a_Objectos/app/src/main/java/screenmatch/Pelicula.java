@@ -3,74 +3,18 @@
  */
 package screenmatch;
 
-public class Pelicula {
+public class Pelicula extends Titulo{
 
-  private String nombre;
+  private String director;
 
-  private int fechaDeLanzamiento;
-
-  private int duracionEnMinutos;
-
-  private boolean incluidoEnElPlan;
-
-  private double sumaDeLasEvaluaciones;
-
-  private int totalDeLasEvaluaciones;
-
-  public int getTotalDeLasEvaluaciones() {
-    return totalDeLasEvaluaciones;
+  public String getDirector() {
+    return director;
   }
 
-  public void muestraFichaTecnica() {
-    System.out.println("Mi pelicula es: " + nombre);
-    System.out.println("Su fecha de lanzamiento es: " + fechaDeLanzamiento);
-    System.out.println("Duracion en minutos: " + duracionEnMinutos);
+  public void setDirector(String director) {
+    this.director = director;
   }
+  
 
-  public void evalua(double nota) {
-    sumaDeLasEvaluaciones += nota;
-    totalDeLasEvaluaciones++;
-    // lo mismo pero largo
-    // el += hace que sume a ella misma con la variable
-    // sumaDeLasEvaluaciones = sumaDeLasEvaluaciones + nota;
-  }
-
-  public double calculaMedia() {
-    return sumaDeLasEvaluaciones / totalDeLasEvaluaciones;
-
-  }
-
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
-    // this hace que java reconozca la variable a la que queremos definirla
-  }
-
-  public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
-    this.fechaDeLanzamiento = fechaDeLanzamiento;
-  }
-
-  public void setDuracionEnMinutos(int duracionEnMinutos) {
-    this.duracionEnMinutos = duracionEnMinutos;
-  }
-
-  public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
-    this.incluidoEnElPlan = incluidoEnElPlan;
-  }
-
-  public String getNombre() {
-    return nombre;
-  }
-
-  public int getFechaDeLanzamiento() {
-    return fechaDeLanzamiento;
-  }
-
-  public int getDuracionEnMinutos() {
-    return duracionEnMinutos;
-  }
-
-  public boolean isIncluidoEnElPlan() {
-    return incluidoEnElPlan;
-  }
 
 }
