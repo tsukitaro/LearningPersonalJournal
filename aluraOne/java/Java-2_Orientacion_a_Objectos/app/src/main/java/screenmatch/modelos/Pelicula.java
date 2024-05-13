@@ -1,7 +1,7 @@
 /**
  * Pelicula
  */
-package screenmatch;
+package screenmatch.modelos;
 
 public class Pelicula extends Titulo{
 

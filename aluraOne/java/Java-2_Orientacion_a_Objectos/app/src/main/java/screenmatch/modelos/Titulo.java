@@ -1,4 +1,4 @@
-package screenmatch;
+package screenmatch.modelos;
 
 /**
  * Titulo

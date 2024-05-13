@@ -1,8 +1,8 @@
 /**
  * Principal
  */
-import screenmatch.Pelicula;
-import screenmatch.Serie;
+import screenmatch.modelos.Pelicula;
+import screenmatch.modelos.Serie;
 
 public class Principal {
 
