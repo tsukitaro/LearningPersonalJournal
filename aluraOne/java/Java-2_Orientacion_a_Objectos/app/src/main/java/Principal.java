@@ -1,6 +1,9 @@
 /**
  * Principal
  */
+import screenmatch.calculos.CalculadoraDeTiempo;
+import screenmatch.calculos.FiltroRecomendacion;
+import screenmatch.modelos.Episodio;
 import screenmatch.modelos.Pelicula;
 import screenmatch.modelos.Serie;
 
@@ -32,6 +35,29 @@ public class Principal {
     casaDragon.muestraFichaTecnica();
     System.out.println(casaDragon.getDuracionEnMinutos());
 
+    Pelicula otraPelicula = new Pelicula();
+    otraPelicula.setNombre("Matrix"); 
+    otraPelicula.setFechaDeLanzamiento(1998);
+    otraPelicula.setDuracionEnMinutos(180);   
+    
+    CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+    calculadora.incluye(miPelicula);
+    calculadora.incluye(otraPelicula);
+    System.out.println("Tiempo necesario para ver tus titulos favoritos estas vacaciones: " + calculadora.getTiempoTotal());
+
+    FiltroRecomendacion filtroRecomendacion = new FiltroRecomendacion();
+    filtroRecomendacion.filtra(miPelicula);
+
+    Episodio  episodio = new Episodio ();
+    episodio.setNumero(1);
+    episodio.setNombre("La casa Targaryen");
+    episodio.setSerie(casaDragon);
+    episodio.setTotalVisualizaciones(300);
+
+    filtroRecomendacion.filtra(episodio);
+    
+
+
     // comentamos esto para seguir con el curso
     // System.out.println(miPelicula.getTotalDeLasEvaluaciones());
     // System.out.println(miPelicula.calculaMedia());
@@ -39,13 +65,10 @@ public class Principal {
     
 
 
-    // Pelicula otraPelicula = new Pelicula();
-    // otraPelicula.nombre = "Matrix";
-    // otraPelicula.fechaDeLanzamiento = 1998;
-    // otraPelicula.duracionEnMinutos = 180;
-    // 
-    // // System.out.println("Mi pelicula es: " + otraPelicula.nombre);
-    // // System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
+
+
+    // System.out.println("Mi pelicula es: " + otraPelicula.nombre);
+    // System.out.println("Su fecha de lanzamiento es: " + otraPelicula.fechaDeLanzamiento);
     // otraPelicula.muestraFichaTecnica();
 
   }

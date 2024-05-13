@@ -1,6 +1,6 @@
 package screenmatch.calculos;
 
-import screenmatch.modelos.Pelicula;
+import screenmatch.modelos.Titulo;
 
 /**
  * CalculadoraDeTiempo
@@ -13,8 +13,8 @@ public class CalculadoraDeTiempo {
     return tiempoTotal;
   }
 
-  public void incluye(Pelicula pelicula) {
-    tiempoTotal += pelicula.getDuracionEnMinutos();
+  public void incluye(Titulo titulo) {
+    this.tiempoTotal += titulo.getDuracionEnMinutos();
   }
 
 }
