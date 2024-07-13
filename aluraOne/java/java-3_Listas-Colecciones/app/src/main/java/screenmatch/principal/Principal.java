@@ -1,4 +1,6 @@
 package screenmatch.principal;
+import java.util.ArrayList;
+
 /**
  * Principal
  */
@@ -56,6 +58,22 @@ public class Principal {
     episodio.setTotalVisualizaciones(300);
 
     filtroRecomendacion.filtra(episodio);
+  
+    // usar var para usar una inferencia del tipo de dato
+    var peliculaDeBruno = new Pelicula();
+    peliculaDeBruno.setNombre("El señor de los anillos");
+    peliculaDeBruno.setDuracionEnMinutos(100);
+    peliculaDeBruno.setFechaDeLanzamiento(2001);
+
+    ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
+    listaDePeliculas.add(peliculaDeBruno);
+    listaDePeliculas.add(miPelicula);
+    listaDePeliculas.add(otraPelicula);
+    
+    
+    System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
+    System.out.println("La primera pelicula es: " + listaDePeliculas.get(0).getNombre());
+
     
 
 
