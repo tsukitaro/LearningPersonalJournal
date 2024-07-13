@@ -10,8 +10,8 @@ public class Pelicula extends Titulo implements Clasificacion{
   private String director;
 
 
-  public Pelicula (String nombre) {
-    this.setNombre(nombre);
+  public Pelicula(String nombre, int fechaDeLanzamiento) {
+    super(nombre, fechaDeLanzamiento);
   }
 
   public String getDirector() {
@@ -25,6 +25,12 @@ public class Pelicula extends Titulo implements Clasificacion{
   @Override
   public int getClasificacion() {
     return (int) calculaMedia()/2;
+  }
+
+  @Override
+  public String toString() {
+      // TODO Auto-generated method stub
+      return super.toString();
   }
   
 

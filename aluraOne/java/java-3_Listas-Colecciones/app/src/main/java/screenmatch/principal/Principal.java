@@ -14,7 +14,7 @@ import screenmatch.modelos.Serie;
 public class Principal {
 
   public static void main(String[] args) {
-    Pelicula miPelicula = new Pelicula("Encanto");
+    Pelicula miPelicula = new Pelicula("Encanto", 2001);
     miPelicula.setFechaDeLanzamiento(2021);
     miPelicula.setDuracionEnMinutos(120);
     miPelicula.setIncluidoEnElPlan(true);
@@ -29,17 +29,14 @@ public class Principal {
     miPelicula.evalua(7.8);
     System.out.println("Media de eVAluaciones de la pelicula: " + miPelicula.calculaMedia());
 
-    Serie casaDragon = new Serie();
-    casaDragon.setNombre("La casa del dragon");
-    casaDragon.setFechaDeLanzamiento(2022);
+    Serie casaDragon = new Serie("La casa del dragon", 2022);
     casaDragon.setTemporadas(1);
     casaDragon.setMinutosPorEpisodio(50);
     casaDragon.setEpisodiosPorTemprada(10);
     casaDragon.muestraFichaTecnica();
     System.out.println(casaDragon.getDuracionEnMinutos());
 
-    Pelicula otraPelicula = new Pelicula("Matrix");
-    otraPelicula.setFechaDeLanzamiento(1998);
+    Pelicula otraPelicula = new Pelicula("Matrix", 1998);
     otraPelicula.setDuracionEnMinutos(180);
 
     CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
@@ -60,10 +57,9 @@ public class Principal {
     filtroRecomendacion.filtra(episodio);
 
     // usar var para usar una inferencia del tipo de dato
-    var peliculaDeBruno = new Pelicula("El señor de los anillos");
+    var peliculaDeBruno = new Pelicula("El señor de los anillos", 2001);
     // peliculaDeBruno.setNombre();
     peliculaDeBruno.setDuracionEnMinutos(100);
-    peliculaDeBruno.setFechaDeLanzamiento(2001);
 
     ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
     listaDePeliculas.add(peliculaDeBruno);
@@ -72,6 +68,8 @@ public class Principal {
 
     System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
     System.out.println("La primera pelicula es: " + listaDePeliculas.get(0).getNombre());
+
+    System.out.println(listaDePeliculas.get(0).toString());
 
     // comentamos esto para seguir con el curso
     // System.out.println(miPelicula.getTotalDeLasEvaluaciones());
