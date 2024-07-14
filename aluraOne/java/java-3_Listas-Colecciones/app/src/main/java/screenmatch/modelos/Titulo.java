@@ -1,12 +1,16 @@
 package screenmatch.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Titulo
  */
 public class Titulo {
+  
+  @SerializedName("Title")
+  private String nombre;
 
-    private String nombre;
-
+  @SerializedName("year")
   private int fechaDeLanzamiento;
 
   private int duracionEnMinutos;
@@ -16,8 +20,6 @@ public class Titulo {
   private double sumaDeLasEvaluaciones;
 
   private int totalDeLasEvaluaciones;
-
-
 
   public Titulo(String nombre, int fechaDeLanzamiento) {
     this.nombre = nombre;
@@ -79,5 +81,13 @@ public class Titulo {
   public boolean isIncluidoEnElPlan() {
     return incluidoEnElPlan;
   }
+
+  @Override
+  public String toString() {
+    return "nombre=" + nombre + 
+           ", fechaDeLanzamiento=" + fechaDeLanzamiento;
+  }
+
+  
 
 }

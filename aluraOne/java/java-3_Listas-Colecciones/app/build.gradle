@@ -16,6 +16,12 @@ repositories {
 }
 
 dependencies {
+    // import a BOM
+    implementation platform('org.springframework.boot:spring-boot-dependencies:1.5.8.RELEASE')
+    // define dependencies without versions
+    implementation 'com.google.code.gson:gson'
+    // Use gson
+    // implementation 'com.google.code.gson:gson:2.11.0'
     // Use JUnit test framework.
     testImplementation libs.junit
 
@@ -32,5 +38,5 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = 'org.example.App'
+    mainClass = 'screenmatch.principal.PrincipalConBusqueda'
 }
