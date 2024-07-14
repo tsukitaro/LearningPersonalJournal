@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Titulo
  */
 public class Titulo {
-  
+
   @SerializedName("Title")
   private String nombre;
 
@@ -24,6 +24,15 @@ public class Titulo {
   public Titulo(String nombre, int fechaDeLanzamiento) {
     this.nombre = nombre;
     this.fechaDeLanzamiento = fechaDeLanzamiento;
+  }
+
+  /**
+   * @param miTituloOmdb
+   */
+  public Titulo(TituloOmdb miTituloOmdb) {
+    this.nombre = miTituloOmdb.title();
+    this.fechaDeLanzamiento = Integer.valueOf(miTituloOmdb.year());
+    this.duracionEnMinutos = Integer.valueOf(miTituloOmdb.runtime().substring(0, 2));
   }
 
   public int getTotalDeLasEvaluaciones() {
@@ -84,10 +93,9 @@ public class Titulo {
 
   @Override
   public String toString() {
-    return "nombre=" + nombre + 
-           ", fechaDeLanzamiento=" + fechaDeLanzamiento;
+    return "nombre='" + nombre + '\'' +
+        ", fechaDeLanzamiento=" + fechaDeLanzamiento +
+        ", duracion=" + duracionEnMinutos;
   }
-
-  
 
 }
