@@ -31,26 +31,35 @@ Here I begin with Java & basic Javascript
   - **[Encriptador](https://www.github.com/kert-daiki/ichiChallenge-encriptador "Repository")**
     At the moment is the only project with _**JavaScript**_ 
 
+## [HyperSkill](./Hyperskill)
+Notes & Projects for Java Course
+
+## [Cody Fantasy](./codyFantasy)
+Lessons to Javascript with Game learning method
+
+[//]: # (#TODO crear carpeta)
+[//]: # (## [FreeCodeCamp]&#40;&#41;)
+
+
+## [SoloLearn](./sololearn)
+Notes of mobile course
+
 [//]: # (Repository to my project from my Learning path)
 
 [//]: # (Repository to storage my way for courses and knowlegde that I got)
 
 
-[default](./file.txt)
+
 
 ## Currently courses
-- Alura
-- SoloLearn
+
+- [ ] Alura
+- [ ] HyperSkill
+- [ ] SoloLearn
 
 ## Complete courses
-- [x] W3schoools [theory]() [java](<README#Currently courses>) [^2]
+- [x] W3schoools 
+- [x] Microsoft Learning Courses (Javascript, Excel, Java)
 
-# File Structure[^1]
-## Alura
-- ### java
-    - Introduccion a Java
-- javascript
 
-[^1]: Structure for the all files and projects
-[^2]: here is 2
 
