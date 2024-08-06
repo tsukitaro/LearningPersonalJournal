@@ -21,6 +21,11 @@ public class Main {
 
         // TODO: Implement the logic to calculate the sum of even numbers
         // Add single-line comments to explain each step
+        for (int j : arr) {
+            if (j % 2 == 0) {
+                sum += j;
+            }
+        }
 
         return sum;
     }
