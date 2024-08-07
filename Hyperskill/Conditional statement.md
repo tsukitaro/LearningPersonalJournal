@@ -25,3 +25,4 @@ if (expression0) {
 
 ![[attachments/Pasted image 20240807103415.png]]
 
+>**Important: Remember to close the scanner!
