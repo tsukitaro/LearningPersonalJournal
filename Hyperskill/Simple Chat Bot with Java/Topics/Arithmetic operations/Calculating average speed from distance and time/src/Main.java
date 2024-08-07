@@ -11,7 +11,7 @@ public class Main {
         double time = scanner.nextDouble();
 
         // TODO: Calculate the average speed in kilometers per hour
-        double averageSpeed = 0.0;
+        double averageSpeed = distance/time;
 
         // Print the average speed rounded to 2 decimal places
         System.out.printf("%.2f", averageSpeed);
