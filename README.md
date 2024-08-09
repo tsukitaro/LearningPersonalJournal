@@ -1,32 +1,65 @@
-# **UNDER CONSTRUCTION**
+>[!WARNING]
+># **UNDER CONSTRUCTION**
+
 
 
 # Learning Journal
-Repository to my project from my Learning path
+Repository to track all my learning resources, projects, lesson & courses.
 
-Repository to storage my way for courses and knowlegde that I got
+## Resources & Projects
+This is sorted by sites that I used to learn different topics
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-</picture>
+## [AluraOne](./aluraOne)
+Here I begin with Java & basic Javascript
 
-[default](./file.txt)
+- ## **[Java](./aluraOne/java)**
+
+  this folder contains my lesson & projects (some projects host in self repositories) 
+    ### **Projects**
+  
+    - **[Encriptador](https://www.github.com/kert-daiki/ichiChallenge-encriptador "Repository")**
+      Project that encrypt text with webpage
+    - **[Conversor de Moneda](https://www.github.com/kert-daiki/Conversor-de-Moneda---Challenge-ONE---LearningSteps)**
+      Let you money exchange from a limited countries in LAC
+    - **[LiterAlura](https://github.com/kert-daiki/LiterAlura-LS)**
+      Implementation of Books & Authors API
+    - **[Foro HUB Alura](https://github.com/kert-daiki/forohubalura)**
+      API REST implementation
+- ## **[JavaScript](./aluraOne/javascript)**
+  Lessons of Javascript courses
+
+  - **[Encriptador](https://www.github.com/kert-daiki/ichiChallenge-encriptador "Repository")**
+    At the moment is the only project with _**JavaScript**_ 
+
+## [HyperSkill](./Hyperskill)
+Notes & Projects for Java Course
+
+## [Cody Fantasy](./codyFantasy)
+Lessons to Javascript with Game learning method
+
+[//]: # (#TODO crear carpeta)
+[//]: # (## [FreeCodeCamp]&#40;&#41;)
+
+
+## [SoloLearn](./sololearn)
+Notes of mobile course
+
+[//]: # (Repository to my project from my Learning path)
+
+[//]: # (Repository to storage my way for courses and knowlegde that I got)
+
+
+
 
 ## Currently courses
-- Alura
-- SoloLearn
+
+- [ ] Alura
+- [ ] HyperSkill
+- [ ] SoloLearn
 
 ## Complete courses
-- [x] W3schoools [theory]() [java](<README#Currently courses>) [^2]
+- [x] W3schoools 
+- [x] Microsoft Learning Courses (Javascript, Excel, Java)
 
-# File Structure[^1]
-## Alura
-- ### java
-    - Introduccion a Java
-- javascript
 
-[^1]: Structure for the all files and projects
-[^2]: here is 2
 
