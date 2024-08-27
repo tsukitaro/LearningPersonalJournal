@@ -1,18 +1,22 @@
+import Files.FilePath;
 import generics.BoxExample;
 import generics.GenericsDemo;
 import generics.Maximun;
 
 import javax.swing.*;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
 
 
 public class Application {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, URISyntaxException {
 
 //        printTest();
 //        printGenericClass();
 //        printFirstExample();
-
-
+//        FilePath filePath = new FilePath();
+//        filePath.testFilePath();
     }
 
     public static void printTest(){
