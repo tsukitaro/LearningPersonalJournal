@@ -1,12 +1,9 @@
-import Files.FilePath;
+import java.io.IOException;
+import java.net.URISyntaxException;
+
 import generics.BoxExample;
 import generics.GenericsDemo;
 import generics.Maximun;
-
-import javax.swing.*;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.file.Path;
 
 
 public class Application {
