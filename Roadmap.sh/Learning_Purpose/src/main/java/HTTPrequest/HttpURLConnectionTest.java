@@ -5,6 +5,9 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+//import java.util.Iterator;
+
+//import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
@@ -12,22 +15,41 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class HttpURLConnectionTest {
 
-  public static void main(String[] args) throws IOException {
+  public void HttpTest() throws IOException {
     URL url = new URL("https://animechan.io/api/v1/quotes/random");
 
+    ObjectMapper mapper = new ObjectMapper();
 
     HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
     connection.setRequestProperty("accept", "application/json");
 
-    InputStream responseStream = connection.getInputStream();
+    try (InputStream responseStream = connection.getInputStream()) {
+      ApiResponse anime = mapper.readValue(responseStream, ApiResponse.class);
+      System.out.println(responseStream);
+      System.out.println(anime.data().content());
+      System.out.println("hello");
 
-    ObjectMapper mapper = new ObjectMapper();
-    //APOD apod = mapper.readValue(responseStream, APOD.class);
-    Anime anime = mapper.readValue(responseStream, Anime.class);
-    System.out.println(anime.getName());
-    
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
 
-    
+    //
+    // JsonNode jsonResponse = mapper.readTree(responseStream);
+    //
+    // JsonNode characterNode = jsonResponse.path("data").path("character");
+    //
+    // Iterator<JsonNode> elements = characterNode.elements();
+    //
+    // while (elements.hasNext()) {
+    // JsonNode charNext = elements.next();
+    // Anime anime = new
+    // Anime(charNext.path("data").path("character").path("name").asText());
+    // System.out.println(anime.getCharacter());
+    //
+    // }
+    //
+    // APOD apod = mapper.readValue(responseStream, APOD.class);
+
   }
 }

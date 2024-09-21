@@ -1,27 +1,30 @@
 package HTTPrequest;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * Anime
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Anime {
 
   private String name;
 
-  private String character;
 
   private String quote;
 
   public Anime(@JsonProperty("name") String name,
-              @JsonProperty("name") String character,
               @JsonProperty("content") String quote
   ){
     this.name = name;
-    this.character = character;
     this.quote = quote;
   }
-
+  //
+  //public Anime(String character){
+  //  this.character = character;
+  //}
+  //
   public String getName() {
     return name;
   }
@@ -29,16 +32,7 @@ public class Anime {
   public void setName(String name) {
     this.name = name;
   }
-
-  public String getCharacter() {
-    return character;
-  }
-
-  public void setCharacter(String character) {
-    this.character = character;
-  }
-
-  public String getQuote() {
+   public String getQuote() {
     return quote;
   }
 
