@@ -4,17 +4,25 @@ import java.net.URISyntaxException;
 import generics.BoxExample;
 import generics.GenericsDemo;
 import generics.Maximun;
+import serializationTest.Depersist;
+//import serializationTest.Persis;
 
 public class Application {
   public static void main(String[] args) throws IOException, URISyntaxException {
-    HTTPrequest.HttpURLConnectionTest test = new HTTPrequest.HttpURLConnectionTest();
-    test.HttpTest();
+    //HTTPrequest.HttpURLConnectionTest test = new HTTPrequest.HttpURLConnectionTest();
+    //test.HttpTest();
 
     // printTest();
     // printGenericClass();
     // printFirstExample();
     // FilePath filePath = new FilePath();
     // filePath.testFilePath();
+
+
+    //Persis persis = new Persis();
+    //persis.persistTest();
+    Depersist depersist = new Depersist();
+    depersist.depersistTest();
   }
 
   public static void printTest() {
