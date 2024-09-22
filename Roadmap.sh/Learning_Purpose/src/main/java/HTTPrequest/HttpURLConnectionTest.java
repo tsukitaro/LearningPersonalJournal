@@ -27,7 +27,7 @@ public class HttpURLConnectionTest {
     try (InputStream responseStream = connection.getInputStream()) {
       ApiResponse anime = mapper.readValue(responseStream, ApiResponse.class);
       System.out.println(responseStream);
-      System.out.println(anime.data().content());
+      System.out.println(anime.data().animedata().name());
       System.out.println("hello");
 
     } catch (IOException e) {
