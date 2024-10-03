@@ -1,9 +1,6 @@
 plugins {
-    id 'java'
+    id 'application'
 }
-
-group = 'org.mausmera'
-version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -11,12 +8,33 @@ repositories {
 
 dependencies {
 
+    implementation platform('org.apache.logging.log4j:log4j-bom:2.24.0')
+    implementation 'org.apache.logging.log4j:log4j-api:${log4j-api.version}'
+    implementation 'org.apache.logging.log4j:log4j-core:${log4j-core.version}'
     //implementation 'com.fasterxml.jackson:jackson-databind:2.15.2'  
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+  
     testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+     // The logging implementation (i.e., Log4j Core)
+    runtimeOnly 'org.apache.logging.log4j:log4j-core'
+    //runtimeOnly 'org.apache.logging.log4j:log4j-jul'
+    //runtimeOnly 'org.slf4j:slf4j-jdk14:2.0.16' // SLF4J-to-JUL bridge
+
+}
+
+application {
+    mainClass = "org.masumera.Application"
 }
 
 test {
     useJUnitPlatform()
+    testLogging {
+      events  "passed", "skipped", "failed"
+      showStandardStreams = true
+    }
+    //systemProperty("java.util.logging.manager", "org.apache.logging.log4j.jul.LogManager")
+    //systemProperty("log4j2.disableJmx", "true")
 }

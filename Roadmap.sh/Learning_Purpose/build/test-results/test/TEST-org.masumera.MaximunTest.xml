@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.masumera.MaximunTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-10-03T01:38:46" hostname="LAPTOP-LKGMNUB0" time="0.032">
+  <properties/>
+  <testcase name="Maximun method should return the maximun number from 3 numbers" classname="org.masumera.MaximunTest" time="0.015"/>
+  <testcase name="repetition 1 of 4" classname="org.masumera.MaximunTest" time="0.002"/>
+  <testcase name="repetition 2 of 4" classname="org.masumera.MaximunTest" time="0.001"/>
+  <testcase name="repetition 3 of 4" classname="org.masumera.MaximunTest" time="0.001"/>
+  <testcase name="repetition 4 of 4" classname="org.masumera.MaximunTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
