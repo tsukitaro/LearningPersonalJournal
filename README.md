@@ -55,7 +55,7 @@ Notes of mobile course
 
 - [ ] Alura
 - [ ] HyperSkill
-- [ ] SoloLearn
+- [x] SoloLearn
 
 ## Complete courses
 - [x] W3schoools 
