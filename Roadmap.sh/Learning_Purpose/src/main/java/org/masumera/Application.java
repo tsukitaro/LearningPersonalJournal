@@ -1,17 +1,47 @@
 package org.masumera;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.URISyntaxException;
 
 import org.masumera.generics.BoxExample;
 import org.masumera.generics.GenericsDemo;
 import org.masumera.generics.Maximun;
 import org.masumera.serializationTest.Depersist;
+import org.masumera.serializationTest.Persona;
 
 public class Application {
   public static void main(String[] args) throws IOException, URISyntaxException {
-    //HTTPrequest.HttpURLConnectionTest test = new HTTPrequest.HttpURLConnectionTest();
-    //test.HttpTest();
+
+    try {
+      Persona persona = new Persona("Juan", 30);
+      FileOutputStream fileOut = new FileOutputStream("persona.ser");
+      ObjectOutputStream out = new ObjectOutputStream(fileOut);
+      out.close();
+      fileOut.close();
+      System.out.println("Objecto serializado con exito");
+    } catch (Exception e) {
+      // TODO: handle exception
+      e.printStackTrace();
+    }
+
+    try {
+      FileInputStream fileIn = new FileInputStream("persona.ser");
+      ObjectInputStream in = new ObjectInputStream(fileIn);
+
+      Persona personaDeserializada = (Persona) in.readObject();
+      in.close();
+      fileIn.close();
+      System.out.println("Objecto deserealizado: " + personaDeserializada);
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+    // HTTPrequest.HttpURLConnectionTest test = new
+    // HTTPrequest.HttpURLConnectionTest();
+    // test.HttpTest();
 
     // printTest();
     // printGenericClass();
@@ -19,11 +49,10 @@ public class Application {
     // FilePath filePath = new FilePath();
     // filePath.testFilePath();
 
-
-    //Persis persis = new Persis();
-    //persis.persistTest();
-    Depersist depersist = new Depersist();
-    depersist.depersistTest();
+    // Persis persis = new Persis();
+    // persis.persistTest();
+    //Depersist depersist = new Depersist();
+    //depersist.depersistTest();
   }
 
   public static void printTest() {
