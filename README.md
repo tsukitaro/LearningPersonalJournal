@@ -56,8 +56,9 @@ Notes of mobile course
 
 ## Currently courses
 
-- [ ] HyperSkill [**Java**]
-- [ ] MicrosoftLearn [**Javascript, Typescript, Vue.js**]
+- [ ] HyperSkill **[Java]**
+- [ ] MicrosoftLearn **[Javascript, Typescript, Vue.js]**
+- [ ]  Roadmap guide **[Javascript, Vue]**
 
 ## Complete courses
 - [x] W3schoools 
