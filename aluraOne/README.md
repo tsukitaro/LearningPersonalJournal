@@ -1,6 +1,6 @@
-#Alura 
+# Alura 
 
-Resources & notes about AluraCuros
+**Resources & notes about AluraCuros**
 Here I have 
 
 - Java
