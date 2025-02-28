@@ -56,13 +56,13 @@ Notes of mobile course
 
 ## Currently courses
 
-- [x] Alura [Java, Javascript]
-- [ ] HyperSkill [Java]
-- [x] SoloLearn [Java]
+- [ ] HyperSkill [**Java**]
+- [ ] MicrosoftLearn [**Javascript, Typescript, Vue.js**]
 
 ## Complete courses
 - [x] W3schoools 
-- [x] Microsoft Learning Courses (Javascript, Excel, Java)
-
+- [x] Microsoft Learning Courses [**Javascript, Excel, Java**]
+- [x] ~~Alura~~ **[Java, Javascript]**
+- [x] ~~SoloLearn~~ **[Java]**
 
 
