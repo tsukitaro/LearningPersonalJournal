@@ -53,9 +53,9 @@ Notes of mobile course
 
 ## Currently courses
 
-- [ ] Alura
-- [ ] HyperSkill
-- [x] SoloLearn
+- [x] Alura [Java, Javascript]
+- [ ] HyperSkill [Java]
+- [x] SoloLearn [Java]
 
 ## Complete courses
 - [x] W3schoools 
