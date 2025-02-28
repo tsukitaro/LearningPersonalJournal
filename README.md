@@ -9,6 +9,9 @@ Repository to track all my learning resources, projects, lesson & courses.
 ## Resources & Projects
 This is sorted by sites that I used to learn different topics
 
+## [Notes](./Notes/)
+Here is the all notes about general topics in markdown format 
+
 ## [AluraOne](./aluraOne)
 Here I begin with Java & basic Javascript
 
