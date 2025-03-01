@@ -19,9 +19,7 @@ Here I begin with Java & basic Javascript
 
   this folder contains my lesson & projects (some projects host in self repositories) 
     ### **Projects**
-  
-    - **[Encriptador](https://www.github.com/kert-daiki/ichiChallenge-encriptador "Repository")**
-      Project that encrypt text with webpage
+   
     - **[Conversor de Moneda](https://www.github.com/kert-daiki/Conversor-de-Moneda---Challenge-ONE---LearningSteps)**
       Let you money exchange from a limited countries in LAC
     - **[LiterAlura](https://github.com/kert-daiki/LiterAlura-LS)**
